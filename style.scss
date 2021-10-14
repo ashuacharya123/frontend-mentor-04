@@ -115,3 +115,46 @@ body {
     color: $Very-dark-cyan;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .container {
+    height: 100vh;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 20rem;
+    width: 65%;
+
+    &__card {
+      height: 50rem;
+      &__1 {
+        border-radius: 1rem 0 0 1rem;
+      }
+
+      &__3 {
+        border-radius: 0 1rem 1rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    width: 65%;
+  }
+}
