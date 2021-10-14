@@ -102,6 +102,15 @@ body {
   padding: 1.5rem 3rem;
   border-radius: 50rem;
   margin-bottom: 2rem;
+  outline: 2px solid $Very-light-gray;
+  outline-offset: -2px;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    color: $Very-light-gray;
+    background-color: transparent;
+  }
 
   &--orange {
     color: $Bright-orange;
